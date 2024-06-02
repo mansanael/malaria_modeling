@@ -1,6 +1,8 @@
 // pages/index.js
 import { useState, useEffect } from 'react';
 import Layout from '../components/Layout';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFaceRelieved } from '@fortawesome/free-solid-svg-icons'
 
 const slides = [
   {

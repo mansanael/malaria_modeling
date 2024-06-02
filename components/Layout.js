@@ -1,6 +1,7 @@
 // components/Layout.js
 import Link from 'next/link';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFaceRelieved } from '@fortawesome/free-solid-svg-icons'
 export default function Layout({ children }) {
   return (
     <div className="bg-white text-gray-900">
@@ -18,8 +19,10 @@ export default function Layout({ children }) {
               ABOUT US
             </Link>
             <Link href="/handbook" className="text-gray-700 hover:text-gray-900">PROGRAM HANDBOOK</Link>
-            <a href="#" className="text-gray-700 hover:text-gray-900">EMOD</a>
-            <a href="#" className="text-gray-700 hover:text-gray-900">MORE</a>
+            <Link href="/emod" className="text-gray-700 hover:text-gray-900">EMOD</Link>
+            <Link href="/resources" className="text-gray-700 hover:text-gray-900">RESOURCES</Link>
+            <Link href="/events" className="text-gray-700 hover:text-gray-900">EVENEMENTS</Link>
+
           </nav>
           <div className="space-x-4">
             <a href="#" className="text-gray-700 hover:text-gray-900">
