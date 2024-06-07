@@ -4,10 +4,10 @@ import Layout from '../components/Layout';
 export default function About() {
   return (
     <Layout>
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 w-2/3 mx-auto"  >
         <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center">
           <div className="w-full lg:w-1/2">
-            <img src="/mission-image.png" alt="Image de la Mission" className="rounded-lg shadow-lg" />
+            <img src="https://targetmalaria.org/wp-content/uploads/2020/07/ug_people.jpg" alt="Image de la Mission" className="rounded-lg shadow-lg" />
           </div>
           <div className="w-full lg:w-1/2 lg:pl-16 mt-8 lg:mt-0">
             <h2 className="text-3xl font-bold mb-4">Nos Missions</h2>
@@ -26,7 +26,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="py-16 w-2/3 mx-auto ">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Points Forts du Programme</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

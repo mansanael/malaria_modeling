@@ -10,8 +10,8 @@ export default function Layout({ children }) {
       <header className="border-b py-4">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-4">
-            <img src="/logo1.png" alt="Logo 1" className="h-12" />
-            <img src="/logo2.png" alt="Logo 2" className="h-12" />
+            <img src="https://numalariamodeling.github.io/FE-2023-quarto-website/numalaria_logo.png" alt="Logo 1" className="h-12" />
+            <img src="https://cfs.edu.sn/wp-content/uploads/2021/08/UIDT.png" alt="Logo 2" className="h-12" />
           </div>
           <nav className="space-x-4">
             <Link href="/" className="text-gray-700 hover:text-gray-900">
@@ -61,7 +61,7 @@ export default function Layout({ children }) {
 
       <main className="py-8 px-4 md:px-8 lg:px-16">{children}</main>
 
-      <footer className="bg-gray-900 text-white py-8">
+      <footer className="bg-gray-900 text-white py-8 mx-auto">
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4"> A PROPOS </h3>
@@ -147,11 +147,11 @@ export default function Layout({ children }) {
             </div>
             <p>
               <FontAwesomeIcon icon={faEnvelope} />  
-               {" "}naelmansa@gmail.com
+               {"    "}naelmansa@gmail.com
             </p>
             <p>
               <FontAwesomeIcon icon={faMapMarkerAlt} /> 
-                {" "} UIDT
+                {"    "}UIDT
             </p>
             <p>
               <FontAwesomeIcon icon={faPhone} /> {" "} +221 77 000 00 00

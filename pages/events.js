@@ -8,7 +8,7 @@ const events = [
     title: 'Programme d\'Enrichissement du Corps Professoral en Modélisation du Paludisme 2024',
     location: 'École de Santé Publique Fred N. Binka, Université des Sciences de la Santé et Alliées, Ho, UHAS, Région Volta, Ghana',
     description: 'L\'atelier de formation intensive en modélisation appliquée du paludisme est conçu pour donner aux scientifiques africains les compétences et les connaissances nécessaires pour lutter contre le paludisme grâce à des techniques avancées de modélisation mathématique...',
-    image: '/path-to-your-image.png'
+    image: 'https://media.path.org/images/IMG_8144_1.max-1200x800.jpg'
   },
   // Ajouter plus d'événements si nécessaire
 ];

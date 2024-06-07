@@ -2,18 +2,18 @@
 import { useState, useEffect } from 'react';
 import Layout from '../components/Layout';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFaceRelieved } from '@fortawesome/free-solid-svg-icons'
+import { faComment, faComments, faFaceRelieved, faHandshake, faLaptopCode, faUserGraduate } from '@fortawesome/free-solid-svg-icons'
 
 const slides = [
   {
     title: 'Programme d\'Enrichissement du Corps Professoral en Modélisation du Paludisme 2024',
     description: 'La charge du paludisme reste élevée en Afrique subsaharienne malgré deux décennies d\'intervention intense. L\'analyse régulière et l\'utilisation des données de santé publique mèneront à un contrôle plus efficace grâce à la prise de décision basée sur des preuves.',
-    image: '/carousel-image1.png',
+    image: 'https://cdn.who.int/media/images/default-source/global-malaria-program-(gmp)/feature-stories/malaria-elimination-belize.tmb-1200v.jpg?sfvrsn=253cd203_7',
   },
   {
     title: 'Un Autre Titre de Diapositive',
     description: 'Une autre description de diapositive.',
-    image: '/carousel-image2.png',
+    image: 'https://cdn1.byjus.com/wp-content/uploads/2018/11/common-diseases-in-humans-malaria-life-cycle.png',
   },
   // Ajouter d'autres diapositives si nécessaire
 ];
@@ -39,15 +39,15 @@ export default function Home() {
 
   return (
     <Layout>
-      <div className="container mx-auto my-8">
+      <div className="container w-2/3 mx-auto my-8 p-10">
         <div className="bg-white shadow-lg rounded-lg overflow-hidden">
           <div className="relative">
             {slides.map((slide, index) => (
-              <div key={index} className={`w-full h-64 relative ${activeSlide === index ? 'block' : 'hidden'}`}>
-                <img src={slide.image} alt={`Diapositive ${index}`} className="w-full h-64 object-cover" />
+              <div key={index} className={`w-full h-96 relative ${activeSlide === index ? 'block' : 'hidden'}`}>
+                <img src={slide.image} alt={`Diapositive ${index}`} className="w-full h-96 object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent to-gray-100"></div>
                 <div className="absolute bottom-0 left-0 p-4 bg-opacity-75 bg-white rounded-lg">
-                  <h2 className="text-4xl font-bold">{slide.title}</h2>
+                  <h2 className="text-2xl font-bold">{slide.title}</h2>
                   <p className="text-gray-700 mt-2">{slide.description}</p>
                   <button className="mt-4 bg-black text-white px-6 py-2 rounded-full">EN SAVOIR PLUS</button>
                 </div>
@@ -67,7 +67,7 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-50 py-16 mx-auto w-2/3 flex-auto ">
         <div className="container mx-auto px-4">
           <h2 className="text-purple-500 text-lg font-semibold mb-4">Informations de base sur nous</h2>
           <h3 className="text-3xl font-bold mb-4">Notre objectif à long terme est de former une masse critique de scientifiques spécialisés en modélisation qui sont :</h3>
@@ -81,13 +81,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="py-16  w-2/3 mx-auto ">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Les points forts de nos programmes</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-red-600 text-white rounded-lg p-6 shadow-md transform hover:scale-105 transition-transform duration-300">
               <div className="flex items-center justify-center mb-4">
-                <i className="fas fa-laptop-code text-4xl"></i>
+                <FontAwesomeIcon icon={faLaptopCode} className="text-4xl" />
               </div>
               <h4 className="text-xl font-bold mb-2">Formation Multi-Modèle</h4>
               <p className="mb-4">Formation multimodale en modélisation appliquée du paludisme</p>
@@ -95,7 +95,8 @@ export default function Home() {
             </div>
             <div className="bg-teal-600 text-white rounded-lg p-6 shadow-md transform hover:scale-105 transition-transform duration-300">
               <div className="flex items-center justify-center mb-4">
-                <i className="fas fa-comments text-4xl"></i>
+                <FontAwesomeIcon icon={faComments} className="text-4xl" />
+
               </div>
               <h4 className="text-xl font-bold mb-2">Communication Scientifique</h4>
               <p className="mb-4">Formation à la communication scientifique écrite et orale</p>
@@ -103,7 +104,7 @@ export default function Home() {
             </div>
             <div className="bg-yellow-600 text-white rounded-lg p-6 shadow-md transform hover:scale-105 transition-transform duration-300">
               <div className="flex items-center justify-center mb-4">
-                <i className="fas fa-user-graduate text-4xl"></i>
+                <FontAwesomeIcon icon={faUserGraduate} className="text-4xl" />
               </div>
               <h4 className="text-xl font-bold mb-2">Mentorat Dédié</h4>
               <p className="mb-4">Réunions hebdomadaires en tête-à-tête avec le directeur du programme et les partenaires</p>
@@ -111,7 +112,7 @@ export default function Home() {
             </div>
             <div className="bg-orange-500 text-white rounded-lg p-6 shadow-md transform hover:scale-105 transition-transform duration-300">
               <div className="flex items-center justify-center mb-4">
-                <i className="fas fa-handshake text-4xl"></i>
+                <FontAwesomeIcon icon={faHandshake} className="text-4xl" />
               </div>
               <h4 className="text-xl font-bold mb-2">Établir des Connexions</h4>
               <p className="mb-4">Établir des connexions avec une communauté mondiale de modélisateurs du paludisme</p>
