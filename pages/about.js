@@ -7,60 +7,60 @@ export default function About() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center">
           <div className="w-full lg:w-1/2">
-            <img src="/mission-image.png" alt="Mission Image" className="rounded-lg shadow-lg" />
+            <img src="/mission-image.png" alt="Image de la Mission" className="rounded-lg shadow-lg" />
           </div>
           <div className="w-full lg:w-1/2 lg:pl-16 mt-8 lg:mt-0">
-            <h2 className="text-3xl font-bold mb-4">Our Missions</h2>
-            <p className="text-gray-700 mb-4">Malaria burden remains high in Sub-Saharan Africa despite two decades of intense intervention. Regular analysis and use of public health data will lead to more effective control through evidence-based decision making.</p>
-            <h3 className="text-2xl font-bold mb-4">Our long-term goal is to train a critical mass of modeling scientists who are:</h3>
+            <h2 className="text-3xl font-bold mb-4">Nos Missions</h2>
+            <p className="text-gray-700 mb-4">La charge du paludisme reste élevée en Afrique subsaharienne malgré deux décennies d'interventions intenses. L'analyse régulière et l'utilisation des données de santé publique mèneront à un contrôle plus efficace grâce à la prise de décision basée sur des preuves.</p>
+            <h3 className="text-2xl font-bold mb-4">Notre objectif à long terme est de former une masse critique de scientifiques spécialisés en modélisation qui sont :</h3>
             <ul className="list-disc pl-5 text-gray-700 mb-4 space-y-2">
-              <li>Retained within Sub-Saharan Africa</li>
-              <li>Training the next generation of modelers</li>
-              <li>Working closely with local malaria control programs to provide operational support</li>
-              <li>Competitive in obtaining grants from international funding agencies</li>
-              <li>Closely networked with each other across Africa and with international partners</li>
+              <li>Retenus en Afrique subsaharienne</li>
+              <li>Formant la prochaine génération de modélisateurs</li>
+              <li>Travaillant en étroite collaboration avec les programmes locaux de lutte contre le paludisme pour fournir un soutien opérationnel</li>
+              <li>Compétitifs pour obtenir des subventions des agences de financement internationales</li>
+              <li>Étroitement connectés les uns aux autres à travers l'Afrique et avec des partenaires internationaux</li>
             </ul>
-            <p className="text-gray-700 mb-4">To help achieve this goal, Northwestern University’s malaria modeling team is offering an 18-week intensive in-person training program in applied malaria modeling for Sub-Saharan African mathematical modeling faculty – with or without public health backgrounds – tailored to their experience and needs.</p>
-            <p className="text-gray-700">Training is focused on applied modeling with EMOD, an open-source malaria transmission modeling software that is currently used to support malaria programs. Participants will design their own research question and focal training project using EMOD that will form the basis of a Specific Aims page (grant proposal summary page) to be developed during the program.</p>
+            <p className="text-gray-700 mb-4">Pour aider à atteindre cet objectif, l'équipe de modélisation du paludisme de l'Université Northwestern offre un programme de formation intensif en présentiel de 18 semaines en modélisation appliquée du paludisme pour les enseignants-chercheurs en modélisation mathématique d'Afrique subsaharienne - avec ou sans expérience en santé publique - adapté à leur expérience et à leurs besoins.</p>
+            <p className="text-gray-700">La formation est axée sur la modélisation appliquée avec EMOD, un logiciel open-source de modélisation de la transmission du paludisme actuellement utilisé pour soutenir les programmes de lutte contre le paludisme. Les participants concevront leur propre question de recherche et projet de formation focal utilisant EMOD, qui formera la base d'une page d'objectifs spécifiques (résumé de proposition de subvention) à développer pendant le programme.</p>
           </div>
         </div>
       </section>
 
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Program Highlights</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Points Forts du Programme</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white rounded-lg p-6 shadow-md">
               <div className="flex items-center justify-center mb-4">
                 <i className="fas fa-ruler-combined text-4xl text-purple-600"></i>
               </div>
-              <h4 className="text-xl font-bold mb-2">Multi-Modal Training</h4>
-              <p className="text-gray-700 mb-4">Multi-modal training in applied malaria modeling - Hands-on tutorials and exercises focused on model configuration and analysis, supplemented by lectures and journal clubs, to enable participants to independently carry out their focal projects. Participants will run models using Northwestern’s high performance computing cluster.</p>
-              <a href="#" className="text-purple-600 underline">Read More</a>
+              <h4 className="text-xl font-bold mb-2">Formation Multimodale</h4>
+              <p className="text-gray-700 mb-4">Formation multimodale en modélisation appliquée du paludisme - Tutoriels pratiques et exercices axés sur la configuration et l'analyse des modèles, complétés par des conférences et des clubs de journaux, pour permettre aux participants de réaliser indépendamment leurs projets focaux. Les participants exécuteront des modèles en utilisant le cluster de calcul haute performance de Northwestern.</p>
+              <a href="#" className="text-purple-600 underline">En savoir plus</a>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-md">
               <div className="flex items-center justify-center mb-4">
                 <i className="fas fa-file-alt text-4xl text-pink-600"></i>
               </div>
-              <h4 className="text-xl font-bold mb-2">Scientific Communication</h4>
-              <p className="text-gray-700 mb-4">Training in written and oral scientific communication - Iterative revisions of draft documents and oral presentations, with feedback from program director, peers, and other Northwestern modelers.</p>
-              <a href="#" className="text-pink-600 underline">Read More</a>
+              <h4 className="text-xl font-bold mb-2">Communication Scientifique</h4>
+              <p className="text-gray-700 mb-4">Formation à la communication scientifique écrite et orale - Révisions itératives des documents de brouillon et des présentations orales, avec des retours du directeur du programme, des pairs et d'autres modélisateurs de Northwestern.</p>
+              <a href="#" className="text-pink-600 underline">En savoir plus</a>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-md">
               <div className="flex items-center justify-center mb-4">
                 <i className="fas fa-user-friends text-4xl text-yellow-600"></i>
               </div>
-              <h4 className="text-xl font-bold mb-2">Dedicated Mentorship</h4>
-              <p className="text-gray-700 mb-4">Weekly 1-on-1 meetings with program director and an assigned partner from Northwestern’s team of modelers.</p>
-              <a href="#" className="text-yellow-600 underline">Read More</a>
+              <h4 className="text-xl font-bold mb-2">Mentorat Dédié</h4>
+              <p className="text-gray-700 mb-4">Réunions hebdomadaires en tête-à-tête avec le directeur du programme et un partenaire assigné de l'équipe de modélisateurs de Northwestern.</p>
+              <a href="#" className="text-yellow-600 underline">En savoir plus</a>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-md">
               <div className="flex items-center justify-center mb-4">
                 <i className="fas fa-network-wired text-4xl text-blue-600"></i>
               </div>
-              <h4 className="text-xl font-bold mb-2">Building Connections</h4>
-              <p className="text-gray-700 mb-4">Building connections with a global community of malaria modelers - Join and participation in the Applied Malaria Modeling Network (AMMnet). Connect with faculty enrichment program alumni.</p>
-              <a href="#" className="text-blue-600 underline">Read More</a>
+              <h4 className="text-xl font-bold mb-2">Établir des Connexions</h4>
+              <p className="text-gray-700 mb-4">Établir des connexions avec une communauté mondiale de modélisateurs du paludisme - Rejoindre et participer au Réseau de Modélisation Appliquée du Paludisme (AMMnet). Se connecter avec les anciens élèves du programme d'enrichissement des enseignants.</p>
+              <a href="#" className="text-blue-600 underline">En savoir plus</a>
             </div>
           </div>
         </div>

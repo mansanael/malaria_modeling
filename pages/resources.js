@@ -4,20 +4,20 @@ import Layout from '../components/Layout';
 
 const sections = [
   {
-    title: 'EMOD Papers',
-    content: 'Content for EMOD Papers...'
+    title: 'Articles EMOD',
+    content: 'Contenu pour les Articles EMOD...'
   },
   {
-    title: 'Coding Resources',
-    content: 'Content for Coding Resources...'
+    title: 'Ressources de Codage',
+    content: 'Contenu pour les Ressources de Codage...'
   },
   {
-    title: 'Data Sources',
-    content: 'Content for Data Sources...'
+    title: 'Sources de Données',
+    content: 'Contenu pour les Sources de Données...'
   },
   {
-    title: 'Science Communication',
-    content: 'Content for Science Communication...'
+    title: 'Communication Scientifique',
+    content: 'Contenu pour la Communication Scientifique...'
   },
 ];
 
@@ -29,7 +29,7 @@ export default function Resources() {
       <div className="container mx-auto py-16 px-4">
         <div className="flex flex-col md:flex-row">
           <nav className="w-full md:w-1/4 mb-8 md:mb-0 md:pr-8">
-            <h2 className="text-2xl font-bold mb-4">Additional Resources</h2>
+            <h2 className="text-2xl font-bold mb-4">Ressources Supplémentaires</h2>
             <ul className="space-y-2">
               {sections.map((section, index) => (
                 <li key={index}>

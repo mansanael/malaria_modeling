@@ -4,62 +4,62 @@ import Layout from '../components/Layout';
 
 const sections = [
   {
-    title: 'Installation Guide',
+    title: 'Guide d\'Installation',
     content: `
-      <h2 class="text-2xl font-bold mb-4">Installation Methods</h2>
-      <p class="mb-4">Below are instructions on how to install emodpy from the terminal, particularly for use on QUEST, or other linux-based clusters. The following instructions are specific to QUEST but can easily be adapted to other clusters or HPCs that use SLURM scheduling.</p>
-      <h3 class="text-xl font-bold mb-2">Prerequisites, Login, Load Python</h3>
+      <h2 class="text-2xl font-bold mb-4">Méthodes d'Installation</h2>
+      <p class="mb-4">Voici des instructions sur la façon d'installer emodpy depuis le terminal, en particulier pour une utilisation sur QUEST ou d'autres clusters basés sur Linux. Les instructions suivantes sont spécifiques à QUEST mais peuvent facilement être adaptées à d'autres clusters ou HPC utilisant la planification SLURM.</p>
+      <h3 class="text-xl font-bold mb-2">Prérequis, Connexion, Chargement de Python</h3>
       <ol class="list-decimal pl-5 mb-4">
-        <li>Review prerequisites and recommendations.</li>
+        <li>Consultez les prérequis et recommandations.</li>
         <ul class="list-disc pl-5 mb-4">
           <li><a href="https://docs.idmod.org/projects/idmtools/en/latest/platforms/slurm/index.html#prerequisites" class="text-blue-600 underline">https://docs.idmod.org/projects/idmtools/en/latest/platforms/slurm/index.html#prerequisites</a></li>
           <li><a href="https://docs.idmod.org/projects/idmtools/en/latest/platforms/slurm/index.html#recommendations" class="text-blue-600 underline">https://docs.idmod.org/projects/idmtools/en/latest/platforms/slurm/index.html#recommendations</a></li>
         </ul>
-        <li>Login/SSH to Slurm cluster (QUEST). You can either use FastX or directly SSH from terminal prompt, like the following:</li>
+        <li>Connectez-vous/SSH au cluster Slurm (QUEST). Vous pouvez soit utiliser FastX soit directement SSH depuis l'invite de terminal, comme suit :</li>
         <pre class="bg-gray-100 p-4 rounded mt-2 mb-4">ssh -X <usernamehere>@quest.northwestern.edu</pre>
-        <li>Load Python module 3.8.4, at terminal prompt, type the following:</li>
+        <li>Chargez le module Python 3.8.4, à l'invite de terminal, tapez ce qui suit :</li>
         <pre class="bg-gray-100 p-4 rounded mt-2 mb-4">module load python/3.8.4</pre>
-        <p>NOTE: idmtools requires Python 3.7 or higher</p>
-        <li>Pull Singularity image containing Python and MPI (used by emodpy-malaria tasks)</li>
-        <p>NOTE: this sif file already exists in <code>/projects/b1139/images/dtk_run_rocky_py39.sif</code> and does not need to be pulled again.</p>
+        <p>NOTE : idmtools nécessite Python 3.7 ou une version supérieure</p>
+        <li>Tirez l'image Singularity contenant Python et MPI (utilisée par les tâches emodpy-malaria)</li>
+        <p>NOTE : ce fichier sif existe déjà dans <code>/projects/b1139/images/dtk_run_rocky_py39.sif</code> et n'a pas besoin d'être tiré à nouveau.</p>
       </ol>
     `
   },
   {
-    title: 'Simulation Guides',
-    content: 'Content for Simulation Guides...'
+    title: 'Guides de Simulation',
+    content: 'Contenu pour les Guides de Simulation...'
   },
   {
-    title: 'Demographics Guides',
-    content: 'Content for Demographics Guides...'
+    title: 'Guides Démographiques',
+    content: 'Contenu pour les Guides Démographiques...'
   },
   {
-    title: 'Climate Guides',
-    content: 'Content for Climate Guides...'
+    title: 'Guides Climatiques',
+    content: 'Contenu pour les Guides Climatiques...'
   },
   {
-    title: 'Vector Guides',
-    content: 'Content for Vector Guides...'
+    title: 'Guides des Vecteurs',
+    content: 'Contenu pour les Guides des Vecteurs...'
   },
   {
-    title: 'Diagnostic Guides',
-    content: 'Content for Diagnostic Guides...'
+    title: 'Guides Diagnostiques',
+    content: 'Contenu pour les Guides Diagnostiques...'
   },
   {
-    title: 'Intervention Guides',
-    content: 'Content for Intervention Guides...'
+    title: 'Guides d\'Intervention',
+    content: 'Contenu pour les Guides d\'Intervention...'
   },
   {
-    title: 'Report Guides',
-    content: 'Content for Report Guides...'
+    title: 'Guides de Rapports',
+    content: 'Contenu pour les Guides de Rapports...'
   },
   {
-    title: 'Analyzer Guides',
-    content: 'Content for Analyzer Guides...'
+    title: 'Guides des Analyseurs',
+    content: 'Contenu pour les Guides des Analyseurs...'
   },
   {
-    title: 'Individual Properties Guides',
-    content: 'Content for Individual Properties Guides...'
+    title: 'Guides des Propriétés Individuelles',
+    content: 'Contenu pour les Guides des Propriétés Individuelles...'
   },
 ];
 
@@ -71,7 +71,7 @@ export default function Emod() {
       <div className="container mx-auto py-16 px-4">
         <div className="flex flex-col md:flex-row">
           <nav className="w-full md:w-1/4 mb-8 md:mb-0 md:pr-8">
-            <h2 className="text-2xl font-bold mb-4">EMOD How-To Guides</h2>
+            <h2 className="text-2xl font-bold mb-4">Guides EMOD</h2>
             <ul className="space-y-2">
               {sections.map((section, index) => (
                 <li key={index}>

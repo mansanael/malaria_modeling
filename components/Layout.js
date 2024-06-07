@@ -1,7 +1,9 @@
 // components/Layout.js
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFaceRelieved } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faTwitter, faInstagram} from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faPhone, faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons";
+
 export default function Layout({ children }) {
   return (
     <div className="bg-white text-gray-900">
@@ -37,7 +39,7 @@ export default function Layout({ children }) {
             <Link href="/about" className="text-gray-700 hover:text-gray-900">
               A PROPOS
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-gray-900">
+            <Link href="/contact_us" className="text-gray-700 hover:text-gray-900">
               NOUS CONTACTER
             </Link>
 
@@ -62,17 +64,23 @@ export default function Layout({ children }) {
       <footer className="bg-gray-900 text-white py-8">
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">ABOUT US</h3>
+            <h3 className="text-xl font-bold mb-4"> A PROPOS </h3>
             <p>
-              Our long-term goal is to train a critical mass of modeling
-              scientists who will.....{" "}
+              
+              Notre objectif à long terme est de former une masse critique de scientifiques en modélisation qui seront capables de concevoir, 
+              de développer et de mettre en œuvre des modèles de simulation pour la prise de décision en santé publique.
+              
+              {" "}
               <a href="#" className="text-yellow-400 underline">
-                Readmore
+                
+                Voir plus
               </a>
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-bold mb-4">QUICK LINKS</h3>
+            <h3 className="text-xl font-bold mb-4">
+              LIENS RAPIDES
+              </h3>
             <ul>
               <li>
                 <a href="#" className="hover:underline">
@@ -81,27 +89,31 @@ export default function Layout({ children }) {
               </li>
               <li>
                 <a href="#" className="hover:underline">
-                  Coding Resources
+                  Codes
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:underline">
-                  Data Sources
+                  Donnees
+                  
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" className="hover:underline">
                   Science Communication
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div>
-            <h3 className="text-xl font-bold mb-4">OTHER LINKS</h3>
+            <h3 className="text-xl font-bold mb-4">
+              AUTRES LIENS
+              
+              </h3>
             <ul>
               <li>
                 <a href="#" className="hover:underline">
-                  EMOD Documentation
+                  Documentation EMOD
                 </a>
               </li>
               <li>
@@ -109,37 +121,41 @@ export default function Layout({ children }) {
                   NU Malaria Modeling
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" className="hover:underline">
                   AMMnet
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div>
-            <h3 className="text-xl font-bold mb-4">FOLLOW US</h3>
+            <h3 className="text-xl font-bold mb-4">
+              SUIVEZ-NOUS
+            </h3>
             <div className="flex space-x-4 mb-4">
-              <a href="#" className="text-blue-600 hover:text-blue-800">
-                <i className="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" className="text-blue-400 hover:text-blue-600">
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a href="#" className="text-red-600 hover:text-red-800">
-                <i className="fab fa-youtube"></i>
-              </a>
-              <a href="#" className="text-blue-900 hover:text-blue-1100">
-                <i className="fab fa-wordpress"></i>
-              </a>
+              <Link href="#" className="text-blue-600 hover:text-blue-800">
+               
+                <FontAwesomeIcon icon={faFacebookF} />
+              </Link>
+              <Link href="#" className="text-blue-400 hover:text-blue-600">
+               <FontAwesomeIcon icon={faTwitter} />
+              </Link>
+              <Link href="#" className="text-red-600 hover:text-red-800">
+                <FontAwesomeIcon icon={faInstagram} />
+              </Link>
+              
             </div>
             <p>
-              <i className="fas fa-envelope"></i> feghana24@gmail.com
+              <FontAwesomeIcon icon={faEnvelope} />  
+               {" "}naelmansa@gmail.com
             </p>
             <p>
-              <i className="fas fa-map-marker-alt"></i> Address: PMB 31
+              <FontAwesomeIcon icon={faMapMarkerAlt} /> 
+                {" "} UIDT
             </p>
             <p>
-              <i className="fas fa-map-marker-alt"></i> Ho, Volta region
+              <FontAwesomeIcon icon={faPhone} /> {" "} +221 77 000 00 00
+              Thies
             </p>
           </div>
         </div>

@@ -4,13 +4,13 @@ import Layout from '../components/Layout';
 
 const events = [
   {
-    date: 'May 20 @ 8:00 am - September 20 @ 5:00 pm',
-    title: 'Malaria Modeling Faculty Enrichment Program 2024',
-    location: 'Fred N. Binka School of Public Health, University of Health and Allied Sciences, Ghana Ho, UHAS, Volta Region, Ghana',
-    description: 'The intensive training workshop in applied malaria modeling is designed to empower African scientists with the skills and knowledge necessary to tackle malaria through advanced mathematical modeling techniques...',
+    date: '20 mai @ 8:00 am - 20 septembre @ 5:00 pm',
+    title: 'Programme d\'Enrichissement du Corps Professoral en Modélisation du Paludisme 2024',
+    location: 'École de Santé Publique Fred N. Binka, Université des Sciences de la Santé et Alliées, Ho, UHAS, Région Volta, Ghana',
+    description: 'L\'atelier de formation intensive en modélisation appliquée du paludisme est conçu pour donner aux scientifiques africains les compétences et les connaissances nécessaires pour lutter contre le paludisme grâce à des techniques avancées de modélisation mathématique...',
     image: '/path-to-your-image.png'
   },
-  // Add more events as needed
+  // Ajouter plus d'événements si nécessaire
 ];
 
 export default function Events() {
@@ -33,26 +33,26 @@ export default function Events() {
       <div className="container mx-auto py-16 px-4">
         <div className="flex flex-col md:flex-row">
           <main className="w-full">
-            <h1 className="text-3xl font-bold mb-6">Archives Events</h1>
+            <h1 className="text-3xl font-bold mb-6">Événements Archivés</h1>
             <div className="mb-4">
               <input
                 type="text"
-                placeholder="Search for events"
+                placeholder="Rechercher des événements"
                 value={searchTerm}
                 onChange={handleSearch}
-                className="w-full p-2 border rounded"
+                className="w-full p-2 border arrondi"
               />
             </div>
             <div className="mb-4 flex justify-between items-center">
-              <button className="bg-gray-200 px-4 py-2 rounded">Today</button>
+              <button className="bg-gray-200 px-4 py-2 rounded">Aujourd'hui</button>
               <select className="bg-gray-200 px-4 py-2 rounded">
-                <option value="upcoming">Upcoming</option>
-                <option value="past">Past</option>
+                <option value="upcoming">À venir</option>
+                <option value="past">Passé</option>
               </select>
               <div className="flex space-x-2">
-                <button className="bg-gray-200 px-4 py-2 rounded">List</button>
-                <button className="bg-gray-200 px-4 py-2 rounded">Month</button>
-                <button className="bg-gray-200 px-4 py-2 rounded">Day</button>
+                <button className="bg-gray-200 px-4 py-2 rounded">Liste</button>
+                <button className="bg-gray-200 px-4 py-2 rounded">Mois</button>
+                <button className="bg-gray-200 px-4 py-2 rounded">Jour</button>
               </div>
             </div>
             {filteredEvents.length > 0 ? (
@@ -70,12 +70,12 @@ export default function Events() {
                 </div>
               ))
             ) : (
-              <p>No events found</p>
+              <p>Aucun événement trouvé</p>
             )}
             <div className="flex justify-between mt-8">
-              <button className="bg-gray-200 px-4 py-2 rounded">Previous Events</button>
-              <button className="bg-blue-600 text-white px-4 py-2 rounded">Subscribe to calendar</button>
-              <button className="bg-gray-200 px-4 py-2 rounded">Next Events</button>
+              <button className="bg-gray-200 px-4 py-2 rounded">Événements Précédents</button>
+              <button className="bg-blue-600 text-white px-4 py-2 rounded">S'abonner au calendrier</button>
+              <button className="bg-gray-200 px-4 py-2 rounded">Événements Suivants</button>
             </div>
           </main>
         </div>
